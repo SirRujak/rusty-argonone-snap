@@ -20,8 +20,6 @@ parts:
 
 apps:
   argon-one-fan-controller:
-    environment:
-      TODO
     command: argon-fan-ctl -c $SNAP_DATA/config.toml
     plugs:
       - physical-memory-control
