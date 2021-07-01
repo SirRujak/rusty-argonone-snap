@@ -16,7 +16,7 @@ parts:
   argon-one-fan-controller:
     # See 'snapcraft plugins'
     plugin: rust
-    source: https://github.com/jonlamb-gh/rpi4-argon-fan-controller
+    source: https://github.com/jonlamb-gh/rpi4-argon-fan-controller.git
 
 apps:
   argon-one-fan-controller:
