@@ -32,3 +32,6 @@ apps:
       - physical-memory-control
       - i2c
       - hardware-observe
+      - mount-observe
+      - network-observe
+      - gpio-memory-control
