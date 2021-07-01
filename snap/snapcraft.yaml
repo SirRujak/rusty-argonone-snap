@@ -7,9 +7,6 @@ description: |
   for the Argon ONE case. The original
 
 architectures:
-  - build-on: armhf
-    run-on: armhf
-    
   - build-on: arm64
     run-on: arm64
 
@@ -24,12 +21,12 @@ parts:
 
 apps:
   argon-one-fan-controller:
-    command: argon-fan-ctl -c $SNAP_DATA/config.toml
+    command: bin/argon-fan-ctl -c $SNAP_DATA/config.toml
     plugs:
       - physical-memory-control
 
   daemon:
-    command: argon-fan-ctl -config $SNAP_DATA/config/config.yaml
+    command: bin/argon-fan-ctl -config $SNAP_DATA/config/config.yaml
     daemon: simple
     plugs:
       - physical-memory-control
