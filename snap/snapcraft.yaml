@@ -28,6 +28,7 @@ apps:
       - hardware-observe
       - mount-observe
       - network-observe
+      - gpio
 
   daemon:
     command: bin/argonone -config $USER_DATA/config/config.yaml
