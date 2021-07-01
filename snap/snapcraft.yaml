@@ -17,11 +17,11 @@ parts:
   argon-one-fan-controller:
     # See 'snapcraft plugins'
     plugin: rust
-    source: https://github.com/jonlamb-gh/rpi4-argon-fan-controller.git
+    source: https://github.com/tonyfettes/argonone.git
 
 apps:
-  argon-one-fan-controller:
-    command: bin/argon-fan-ctl -c $SNAP_DATA/config.toml
+  argonone:
+    command: bin/argonone -c $USER_DATA/config.toml
     plugs:
       - physical-memory-control
       - i2c
@@ -30,7 +30,7 @@ apps:
       - network-observe
 
   daemon:
-    command: bin/argon-fan-ctl -config $SNAP_DATA/config/config.yaml
+    command: bin/argonone -config $USER_DATA/config/config.yaml
     daemon: simple
     plugs:
       - physical-memory-control
