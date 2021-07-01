@@ -24,6 +24,10 @@ apps:
     command: bin/argon-fan-ctl -c $SNAP_DATA/config.toml
     plugs:
       - physical-memory-control
+      - i2c
+      - hardware-observe
+      - mount-observe
+      - network-observe
 
   daemon:
     command: bin/argon-fan-ctl -config $SNAP_DATA/config/config.yaml
