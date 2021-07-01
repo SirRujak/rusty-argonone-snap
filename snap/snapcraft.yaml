@@ -24,8 +24,8 @@ apps:
       plugs:
         - physical-memory-control
 
-    daemon:
-      command: argon-fan-ctl -config $SNAP_DATA/config/config.yaml
-      daemon: simple
-      plugs:
-        - physical-memory-control
+  daemon:
+    command: argon-fan-ctl -config $SNAP_DATA/config/config.yaml
+    daemon: simple
+    plugs:
+      - physical-memory-control
