@@ -28,7 +28,7 @@ apps:
       - hardware-observe
       - mount-observe
       - network-observe
-      - gpio
+      - gpio-control
 
   daemon:
     command: bin/argonone -config $USER_DATA/config/config.yaml
@@ -40,4 +40,8 @@ apps:
       - mount-observe
       - network-observe
       - gpio-memory-control
-      - gpio
+      - gpio-control
+
+layout:
+  /etc:
+    bind: $USER_DATA
