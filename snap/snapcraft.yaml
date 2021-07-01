@@ -30,3 +30,5 @@ apps:
     daemon: simple
     plugs:
       - physical-memory-control
+      - gpio
+      - hardware-observe
