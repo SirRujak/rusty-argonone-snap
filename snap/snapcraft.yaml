@@ -39,3 +39,4 @@ apps:
       - mount-observe
       - network-observe
       - gpio-memory-control
+      - gpio
