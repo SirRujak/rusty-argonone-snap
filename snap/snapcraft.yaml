@@ -41,7 +41,8 @@ apps:
       - network-observe
       - gpio-memory-control
       - gpio-control
-
-layout:
-  /etc:
-    bind: $USER_DATA
+      
+passthrough:
+  layout:
+    /etc:
+      bind: $USER_DATA
