@@ -45,4 +45,4 @@ apps:
 passthrough:
   layout:
     /etc:
-      bind: $USER_DATA
+      bind: $SNAP_DATA
